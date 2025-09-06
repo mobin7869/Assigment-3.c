@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int number[100];
+    int i,largest,smallest;
+    for(i=0;i<100;i++)
+    {
+        printf("enter number %d : ",i+1);
+        scanf("%d",&number[i]);
+        
+    }
+    largest=smallest=number[0];
+  for(i=0;i<100;i++)
+  {
+      if(number[i]>largest){
+      largest=number[i];}
+      if(number[i]<smallest){
+smallest=number[i];}
+}
+   printf("largest no. is %d",largest);
+   printf("smallest no. is %d",smallest);
+  return 0;
+}
